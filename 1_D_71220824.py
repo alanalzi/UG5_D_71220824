@@ -1,21 +1,22 @@
 def gaka(a, b, c):
-    kalim_baru = ""
-    kata = ""
+    x = ""
+    y = ""
     for i in range(len(a)):
         if a [i] == " ":
-            if  kata == b:
-                kalim_baru = kalim_baru + c + " "
+            if  y == b:
+                x = x + c + " "
             else:
-                kalim_baru = kalim_baru + kata + " "
-            kata = ""
+                x = x + y + " "
+            y = ""
         else:
-            kata = kata + a [i]
-    if kata == b :
-        kalim_baru = kalim_baru + c
+            y = y + a [i]
+    if y == b :
+        x = x + c
     else:
-        kalim_baru = kalim_baru + kata
-    return kalim_baru
+        x = x + kata
+    return x
 a = input("Masukan kalimat: ")
 b = input("Kata yang akan dicari: ")
 c = input("Diubah menjadi: ")
-gaka(a, b, c)
+x = gaka(a, b, c)
+print(x)
