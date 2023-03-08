@@ -2,8 +2,13 @@ import math
 x = 0
 while x == 0:
     j_awal = input("Masukan jarak awal (dalam meter): ")
-    s_1 = input("Masukan sudut elevasi di menit ke-5 (dalam derajat): ")
-    s_2 = input("Masukan sudut elevasi di menit ke-6 (dalam derajat): ")
+    
+    if j_awal == "berhenti" or j_awal == "stop":
+        print("program dihentikan masbro")
+        break
+
+    s_1 = int(input("Masukan sudut elevasi di menit ke-5 (dalam derajat): "))
+    s_2 = int(input("Masukan sudut elevasi di menit ke-6 (dalam derajat): "))
 
     s_1 = math.radians(float(s_1))
     s_2 = math.radians(float(s_2))
@@ -15,6 +20,7 @@ while x == 0:
     sel_ket = j_akh *math.tan(s_2)  
     
     if j_awal == "berhenti" or j_awal == "stop":
+        print("program dihentikan masbro")
         break
     
     print("selisih ketinggian drone saat menit ke-5 dan ke-8 adalah ", round(sel_ket,2), "meter.")
