@@ -20,7 +20,9 @@ while x == 0:
     sel_ket = j_akh *math.tan(s_2)  
     
     if j_awal == "berhenti" or j_awal == "stop":
-        print("program dihentikan masbro")
+        a = 1
+        for i in range(a):
+            print("program dihentikan masbro")
         break
     
     print("selisih ketinggian drone saat menit ke-5 dan ke-8 adalah ", round(sel_ket,2), "meter.")
