@@ -1,4 +1,4 @@
-def gaka(a, b, c):
+def ganti_kata(a, b, c):
     x = ""
     y = ""
     for i in range(len(a)):
@@ -18,5 +18,5 @@ def gaka(a, b, c):
 a = input("Masukan kalimat: ")
 b = input("Kata yang akan dicari: ")
 c = input("Diubah menjadi: ")
-x = gaka(a, b, c)
+x = ganti_kata(a, b, c)
 print(x)
